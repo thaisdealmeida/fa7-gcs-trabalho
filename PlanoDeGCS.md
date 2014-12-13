@@ -2,7 +2,7 @@
 =================
 Plano de Gerenciamento de Configuração
 ======================================
-Versão &lt;1.0&gt;
+Versão 1.0
 ------------------
 
 _[Observação: O template a seguir é fornecido para uso com o Rational Unified Process (RUP).  O texto exibido entre colchetes e em itálico foi incluído para orientar o autor e deve ser excluído antes da publicação do documento._
@@ -14,7 +14,7 @@ Histórico de Versões
 
 |Data                |Versão       |Descrição               |Autor          |
 |--------------------|-------------|------------------------|---------------|
-|_&lt;dd/mm/aaaa&gt;_|_&lt;1.0&gt;_|_&lt;Versão inicial&gt;_|_&lt;autor&gt;_|
+|13/12/2014 | 1.0 | Versão inicial. | Thaís de Almeida |
 |_&lt;dd/mm/aaaa&gt;_|_&lt;1.1&gt;_|_&lt;Outra versão&gt;_  |_&lt;autor&gt;_|
 
 
@@ -98,7 +98,29 @@ _[Descreva a organização de diretórios do seu repositório e que itens/arquiv
 --------------------------------------
 
 ### 3.2.1 Processamento e Aprovação de Solicitações de Mudança
-_[Descreva o processo pelo qual os problemas e as mudanças são submetidos, revisados e dispostos. Inclua como funciona a transição de estados de uma solicitação de mudança]_
+Seguindo os valores ágeis, mudanças são bem-vindas e aceitas até mesmo em um estado tardio do projeto. Logo, para que isso seja alcançado, o processo de mudanças deve ser simples. 
+
+Assim que uma mudança é solicitada, o time, em uma rápida reunião com o Product Owner, analisam a solicitação de mudança, aprovando ou não a mudança e ela sendo aprovada, decidem em que provável momento ela será feita.
+
+O registro de solicitações de mudanças deve ser feito através do JIRA. 
+
+O fluxo e os estados estão representados na imagem abaixo:  
+
+![Fluxo de Solicitações de Mudanças](https://github.com/thaisdealmeida/fa7-gcs-trabalho/blob/Thais/Fluxo%20-%20Solicita%C3%A7%C3%A3o%20de%20Mudan%C3%A7a.png)
+
+Os possíveis estados para uma mudança estão especificados na tabela abaixo:
+
+| Estado | Descrição |
+|-----------|-----------|
+| Nova | A solicitação de mudança foi criada. |
+| Em Análise | A solicitação está sendo analisada pelo time e pelo Product Owner, caso seja necessário. |
+| Recusada | A solicitação foi recusada. |
+| Aprovada | A solicitação foi aprovada. |
+| Em Desenvolvimento | A mudança está sendo implementada pela equipe de desenvolvedores. |
+| Em Teste | A mudança está na fase de testes do desenvolvedor ou da equipe de testes. |
+| Desenvolvido | Os desenvolvedores terminaram de implementar a mudança e já pode passar para a equipe de testes. |
+| Finalizado | A mudança já pode ser entregue ao cliente. |
+
 
 ### 3.2.2 Comitê de Controle de Mudança (CCB)
 _[Descreva a participação e os procedimentos para processar solicitações e aprovações de mudança a serem seguidos pelo CCB. Informe quem são os membros do CCB e suas responsabilidades.]_
