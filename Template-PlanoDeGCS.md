@@ -36,7 +36,9 @@ _[Uma breve descrição do escopo deste Plano de Gerenciamento de Configuração
 
 1.3 Definições, Acrônimos e Abreviações
 ---------------------------------------
-_[Esta subseção apresenta as definições de todos os termos, acrônimos e abreviações necessários para a correta interpretação do Plano de Gerenciamento de Configuração.  Essas informações podem ser fornecidas mediante referência ao Glossário do projeto.]_
+ NOMN - Nome do projeto, acronimo utilizado no inicio do nome de todos os artefatos.
+ Jira - Ferramenta da Atlassian para controle de mudanças.
+ SVN  - Subversion - Ferramenta open source de controle de configuração de software.
 
 1.4 Referências
 ---------------
