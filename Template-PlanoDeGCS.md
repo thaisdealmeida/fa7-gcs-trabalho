@@ -91,9 +91,9 @@ _[Relacionar os artefatos ou grupos de artefatos, separando por tipo, modulo ou 
 
 | Tipo da Baseline	                      | Label da Baseline		  	      | Data/Marco de criação     |  Conteúdo              |
 |----------------------------------------|-----------------------------|---------------------------|------------------------|
-|_&lt;Requisitos&gt;_|_&lt;xpto_nomn_01_requisitos_01&gt;_|_&lt;Definido no Jira&gt;_|_&lt;NOMN_ECU_caso_de_uso_01&gt;_|
-|_&lt;Testes&gt;_|_&lt;xpto_nomn_01_testes_01&gt;_|_&lt;Definido no Jira&gt;_|_&lt;NOMN_ECU_caso_de_uso_01, Plano de teste do caso de uso&gt;_|
-|_&lt;Release&gt;_|_&lt;xpto_nomn_01_release_01&gt;_|_&lt;Definido no Jira&gt;_|_&lt;Código fonte, release notes, relatório de testes&gt;_|
+|Requisitos|xpto_nomn_01_requisitos_01|Definido no Jira|01/10/2012|NOMN_ECU_caso_de_uso_01|
+|Teste|xpto_nomn_01_testes_01|Definido no Jira|20/10/2012|NOMN_ECU_caso_de_uso_01, Plano de teste do caso de uso|
+|Release|xpto_nomn_01_release_01|Definido no Jira|01/11/2012|Código fonte, release notes, relatório de testes|
 
 ### 3.1.4 Estrutura do Repositório de Versões
 _[Descreva a organização de diretórios do seu repositório e que itens/arquivos devem ser armazenados em cada diretório.]_
@@ -123,4 +123,9 @@ _[Descreva as ferramentas de software, o pessoal e o treinamento necessários pa
 
 6. Auditorias de Configuração
 =============================
-_[Descreva o cronograma das auditorias de configuração e o que será verificado. Informe também como serão reportados os problemas encontrados e onde sera feito o acompanhamento dos itens corretivos.]_
+As auditorias de configuração serão realizadas mensalmente, segundo o calendário abaixo. As não conformidades serão documentadas no relatório de auditoria que está localizado no diretório informado no item 3.1.2. O acompanhamento das correções será feito através de issues cadastradas no jira do projeto.
+
+| Número | Data Prevista | Data Realizada |     Auditor     |
+|--------|---------------|----------------|-----------------|
+|01|01/10/2014|01/10/2014|André Rocha|
+|02|01/11/2014|01/11/2014|André Rocha|
