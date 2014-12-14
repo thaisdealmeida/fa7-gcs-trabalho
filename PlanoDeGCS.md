@@ -2,7 +2,7 @@
 =================
 Plano de Gerenciamento de Configuração
 ======================================
-Versão 1.0
+Versão 1.1
 ------------------
 
 _[Observação: O template a seguir é fornecido para uso com o Rational Unified Process (RUP).  O texto exibido entre colchetes e em itálico foi incluído para orientar o autor e deve ser excluído antes da publicação do documento._
@@ -15,6 +15,7 @@ Histórico de Versões
 |Data                |Versão       |Descrição               |Autor          |
 |--------------------|-------------|------------------------|---------------|
 |13/12/2014 | 1.0 | Versão inicial. | Thaís de Almeida |
+|14/12/2014 | 1.1 | Inclusão de Seção 4. | Thaís de Almeida |
 |_&lt;dd/mm/aaaa&gt;_|_&lt;1.1&gt;_|_&lt;Outra versão&gt;_  |_&lt;autor&gt;_|
 
 
@@ -100,11 +101,12 @@ _[Descreva a organização de diretórios do seu repositório e que itens/arquiv
 ### 3.2.1 Processamento e Aprovação de Solicitações de Mudança
 Seguindo os valores ágeis, mudanças são bem-vindas e aceitas até mesmo em um estado tardio do projeto. Logo, para que isso seja alcançado, o processo de mudanças deve ser simples. 
 
-Assim que uma mudança é solicitada, o time, em uma rápida reunião com o Product Owner, analisam a solicitação de mudança, aprovando ou não a mudança e ela sendo aprovada, decidem em que provável momento ela será feita.
+Assim que uma mudança é solicitada, o time, em uma rápida reunião com o Product Owner, analisam a solicitação de mudança, podendo ser aprovada ou não, e, sendo aprovada, decidem em que provável momento ela será feita.
 
 O registro de solicitações de mudanças deve ser feito através do JIRA. 
 
 O fluxo e os estados estão representados na imagem abaixo:  
+ 
 
 ![Fluxo de Solicitações de Mudanças](https://github.com/thaisdealmeida/fa7-gcs-trabalho/blob/Thais/Fluxo%20-%20Solicita%C3%A7%C3%A3o%20de%20Mudan%C3%A7a.png)
 
@@ -129,9 +131,61 @@ _[Descreva a participação e os procedimentos para processar solicitações e a
 
 4. Padrões e Procedimentos
 ==========================
-_[Descreva os padrões e procedimentos que devem ser seguidos no projeto. Crie subseções se achar necessário, para organizá-los melhor.]_
+Essa seção destina-se a apresentar os padrões que serão utilizados no projeto. Os padrões devem ser seguidos e qualquer melhoria deve ser informada a todo o time e partes interessadas, a saber, equipe de gerência de configuração e equipe de auditoria de processos, para que possa ser discutida e, talvez, implantada. 
 
+4.1 Identificação de documentos do projeto
+--------------------------------------
 
+Os documentos relacionados ao projeto devem seguir um padrão, que deve ser simples. 
+
+A descrição formal deve ser:
+
+(NOME_DO_PROJETO)_(DESCRICAO_SUCINTA_DO_DOCUMENTO)
+
+Ex: Isis_Documento_Visao.doc
+
+Mais uma vez, o padrão pode ser alterado de acordo com a necessidade do projeto.
+
+4.2 Nomenclatura de Branchs
+--------------------------------------
+
+A nomenclatura de branchs deve ser bem explícita para que seja possível uma rápida identificação da sua necessidade. Caso identifique-se a impossibilidade de nomeá-lo dessa forma, pode-se usar o código da atividade, gerado pelo JIRA, como nome. 
+
+A descrição formal deve ser:
+
+(MOTIVO_BRANCH)
+
+ou
+
+<CÓDIGO_JIRA>
+
+Ex: mudancaDeFramework OU FM-42
+
+4.3 Versionamento
+--------------------------------------
+
+Códigos de versionamento só devem ser usados nos documentos e códigos isolados quando necessários. A ferramenta usada para versionamento, o Git, é suficiente para guardar todo o histórico dos arquivos. Caso haja necessidade explícita de inserir códigos de versionamento nos documentos, o padrão é o que se segue:
+
+(CodVersao).(CodMajor).(CodMinor)
+
+CodVersao - Versão geral do sistema/documento, ditadas por grandes releases;
+CodMajor - Código atualizado entre os releases, sempre que há uma nova feature, esse código é atualizado;
+CodMinor - Código atualizado com bugfixes.
+
+Os códigos de versionamento são gerados automaticamente por scripts criados pela equipe de configuração. 
+
+Ex: Isis_Documento_Visao_3.11.1.doc
+
+4.4 Tags
+--------------------------------------
+
+As tags devem seguir um padrão que também pode mudar caso o time e/ou equipe de configuração sinta necessidade. Tags devem ser marcas entregáveis, logo, deve-se gerar uma tag sempre que qualquer feature for implantada no cliente. Bugfixes não necessitam de tags. 
+
+O padrão é o seguinte:
+
+(IDENTIFICADOR)_(VERSAO)
+
+Ex: EntregaRequisitos_1.0
 
 5. Treinamento e Recursos
 =========================
