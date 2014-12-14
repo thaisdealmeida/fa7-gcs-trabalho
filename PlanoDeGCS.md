@@ -41,7 +41,8 @@ _[Esta subseção apresenta as definições de todos os termos, acrônimos e abr
 
 1.4 Referências
 ---------------
-_[Esta subseção apresenta uma lista completa de todos os documentos mencionados no Plano de Gerenciamento de Configuração. Identifique os documentos por título, número de relatório (se aplicável), data e organização responsável pela publicação. Especifique as fontes a partir das quais as referências podem ser obtidas. Essas informações podem ser fornecidas por um anexo ou outro documento.]_
+
+Não se aplica.
 
 1.5 Visão Geral
 ---------------
