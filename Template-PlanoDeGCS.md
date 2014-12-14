@@ -89,9 +89,11 @@ _[Relacionar os artefatos ou grupos de artefatos, separando por tipo, modulo ou 
 
 ### 3.1.3 Baselines do Projeto
 
-_[As baselines funcionam como um padrão oficial no qual os trabalhos subseqüentes são baseados. Somente mudanças autorizadas podem ser efetuadas nas baselines._
-_Descreva em que pontos do ciclo de vida do projeto ou produto as baselines devem ser estabelecidas. As baselines mais comuns devem ser definidas ao final de cada uma das fases de Iniciação, Elaboração, Construção e Transição. Elas também podem ser geradas no final de iterações ocorridas dentro das várias fases ou com freqüência ainda maior._
-_Descreva quem autoriza uma baseline e o que ela contém.]_
+| Tipo da Baseline	                      | Label da Baseline		  	      | Data/Marco de criação     |  Conteúdo              |
+|----------------------------------------|-----------------------------|---------------------------|------------------------|
+|_&lt;Requisitos&gt;_|_&lt;xpto_nomn_01_requisitos_01&gt;_|_&lt;Definido no Jira&gt;_|_&lt;NOMN_ECU_caso_de_uso_01&gt;_|
+|_&lt;Testes&gt;_|_&lt;xpto_nomn_01_testes_01&gt;_|_&lt;Definido no Jira&gt;_|_&lt;NOMN_ECU_caso_de_uso_01, Plano de teste do caso de uso&gt;_|
+|_&lt;Release&gt;_|_&lt;xpto_nomn_01_release_01&gt;_|_&lt;Definido no Jira&gt;_|_&lt;Código fonte, release notes, relatório de testes&gt;_|
 
 ### 3.1.4 Estrutura do Repositório de Versões
 _[Descreva a organização de diretórios do seu repositório e que itens/arquivos devem ser armazenados em cada diretório.]_
