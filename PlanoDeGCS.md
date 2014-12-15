@@ -16,7 +16,7 @@ Histórico de Versões
 |--------------------|-------------|------------------------|---------------|
 |13/12/2014 | 1.0 | Versão inicial. | Thaís de Almeida |
 |14/12/2014 | 1.1 | Inclusão de Seção 4. | Thaís de Almeida |
-|14/12/2014 | 1.2 | Inclusão de Seção 3.1.3 e 6 | André rocha |
+|14/12/2014 | 1.2 | Inclusão de Seção 1.3, 3.1.3 e 6 | André rocha |
 |_&lt;dd/mm/aaaa&gt;_|_&lt;1.1&gt;_|_&lt;Outra versão&gt;_  |_&lt;autor&gt;_|
 
 
@@ -38,7 +38,9 @@ _[Uma breve descrição do escopo deste Plano de Gerenciamento de Configuração
 
 1.3 Definições, Acrônimos e Abreviações
 ---------------------------------------
-_[Esta subseção apresenta as definições de todos os termos, acrônimos e abreviações necessários para a correta interpretação do Plano de Gerenciamento de Configuração.  Essas informações podem ser fornecidas mediante referência ao Glossário do projeto.]_
+ NOMN - Nome do projeto, acronimo utilizado no inicio do nome de todos os artefatos.
+ Jira - Ferramenta da Atlassian para controle de mudanças.
+ SVN  - Subversion - Ferramenta open source de controle de configuração de software.
 
 1.4 Referências
 ---------------
