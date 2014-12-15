@@ -74,7 +74,7 @@ A seção 6 descreve o cronograma das auditorias de configuração e o que será
 |----------------------------------------|-----------------------------|---------------------------|
 |Gerente de Configuração|Thaís de Almeida|Estabelecer Políticas de GC <br> Escrever Plano de GC <br> Configurar Ambiente de GC <br> Criar Espaços de Trabalho de Integração <br> Criar Baselines <br> Promover Baselines|
 |CCM|Manoela Freitas|Estabelecer Processo de Controle de Mudanças <br> Revisar Solicitação de Mudança <br> Aprovar ou rejeitar solicitações de mudanças|
-|Desenvolvedor|Fernando Italo <br> Andre Rocha|Seguir os padrões e procedimentos definidos no plano de gerência de configuração|
+|Desenvolvedor|Fernando Italo, <br> Andre Rocha|Seguir os padrões e procedimentos definidos no plano de gerência de configuração|
 
 2.2 Ferramentas, Ambiente e Infra-estrutura
 -------------------------------------------
