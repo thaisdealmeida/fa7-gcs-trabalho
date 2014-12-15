@@ -11,7 +11,7 @@ Histórico de Versões
 |Data                |Versão       |Descrição               |Autor          |
 |--------------------|-------------|------------------------|---------------|
 |13/12/2014 | 1.0 | Versão inicial. | Thaís de Almeida |
-|14/12/2014 | 1.1 | Inclusão de Seção 4. | Thaís de Almeida |
+|14/12/2014 | 1.1 | Inclusão de Seção 3.2.1 e 4. | Thaís de Almeida |
 |14/12/2014 | 1.2 | Inclusão de Seção 1.3, 3.1.3 e 6 | André Rocha |
 |14/12/2014 | 1.3 | Inclusão de Seção 1.1, 3.2.2 e 5 | Manoela Freitas |
 |15/12/2014 | 1.4 | Inclusão de Seção 1.2, 1.5, 2.1 e 3.1.4 | Fernando Freitas |
@@ -28,13 +28,12 @@ Este documento tem o objetivo de descrever o plano de Gestão de Configuração 
 
 1.2 Escopo
 ----------
-Este documento é destinado a todos os integrantes da equipe responsável pelo projeto Biblioteca e abrange todo o controle e gerenciamento da configuração do projeto, tais como requisitos, casos de uso, diagramas, arquivos de código-fonte, modelos de dados, casos de teste e manuais.
+Este documento é destinado a todos os integrantes da equipe responsáveis pelo projeto Biblioteca e abrange todo o controle e gerenciamento da configuração do projeto, tais como requisitos, diagramas, arquivos de código-fonte, modelos de dados, casos de teste e manuais.
 
 1.3 Definições, Acrônimos e Abreviações
 ---------------------------------------
  NOMN - Nome do projeto, acronimo utilizado no inicio do nome de todos os artefatos.<br>
  Jira - Ferramenta da Atlassian para controle de mudanças.<br>
- SVN  - Subversion - Ferramenta open source de controle de configuração de software.
 
 1.4 Referências
 ---------------
@@ -47,9 +46,9 @@ As próximas seções deste documento estão divididas conforme descrito abaixo:
 
 A seção 2 descreve os papéis e suas responsabilidades das atividades,  ferramentas utilizadas e os procedimentos necessários para realização do controle de versão dos itens de configuração gerados no ciclo de vida do projeto.
 
-A seção 3 descreve como os itens de configuração devem ser identificados, as Baselines do projeto,a estrutura do repositório e a organização dos itens dentro do repositório.
+A seção 3 descreve como os itens de configuração devem ser identificados, as baselines do projeto, a estrutura do repositório e a organização dos itens dentro do repositório.
 
-A seção 4 são abordados os padrões e procedimentos que devem ser seguidos no projeto.
+A seção 4 aborda os padrões e procedimentos que devem ser seguidos no projeto.
 
 A seção 5 descreve as ferramentas de software, o pessoal e o treinamento necessários para implementar as atividades de CM especificadas.
 
@@ -66,7 +65,7 @@ A seção 6 descreve o cronograma das auditorias de configuração e o que será
 |----------------------------------------|-----------------------------|---------------------------|
 |Gerente de Configuração|Thaís de Almeida|Estabelecer Políticas de GC <br> Escrever Plano de GC <br> Configurar Ambiente de GC <br> Criar Espaços de Trabalho de Integração <br> Criar Baselines <br> Promover Baselines|
 |CCB|Manoela Freitas, <br> Emanuela Mascarenhas|Estabelecer Processo de Controle de Mudanças <br> Revisar Solicitação de Mudança <br> Aprovar ou rejeitar solicitações de mudanças|
-|Desenvolvedor|Fernando Italo, <br> Andre Rocha|Seguir os padrões e procedimentos definidos no plano de gerência de configuração|
+|Desenvolvedor|Fernando Italo, <br> André Rocha|Seguir os padrões e procedimentos definidos no plano de gerência de configuração|
 
 2.2 Ferramentas, Ambiente e Infra-estrutura
 -------------------------------------------
@@ -182,7 +181,7 @@ Os itens de configuração do processo de desenvolvimento de software são os ar
 |----------------------------------------|-----------------------------|----------------------|
 |Documento de Requisitos|Analista de requisitos|Modificação ou remoção de requisito existente <br> Criação de novo requisito|
 |Documento de Teste|Analista de teste|Execução de testes funcionais|
-|Manual do usuário|Desenvolvedor: Andre Rocha|Desenvolvimento de nova funcionalidade|
+|Manual do usuário|Desenvolvedor: André Rocha|Desenvolvimento de nova funcionalidade|
 |Código fonte|Desenvolvedor: Fernando Freitas|  -  |
 |Plano de Projeto de Software|Gerente de Projeto: Emanuela Mascarenhas|Alteração em itens do Plano|
 |Planilha de acompanhamento de mudanças|CCB: Manoela Freitas|Adição de nova mudança <br> Alteração de status da mudança|
@@ -190,11 +189,11 @@ Os itens de configuração do processo de desenvolvimento de software são os ar
 
 ### 3.1.3 Baselines do Projeto
 
-| Tipo da Baseline	                      | Label da Baseline		  	      | Data/Marco de criação     |  Conteúdo              |
-|----------------------------------------|-----------------------------|---------------------------|------------------------|
-|Requisitos|xpto_nomn_01_requisitos_01|Definido no Jira|01/10/2012|NOMN_ECU_caso_de_uso_01|
-|Teste|xpto_nomn_01_testes_01|Definido no Jira|20/10/2012|NOMN_ECU_caso_de_uso_01, Plano de teste do caso de uso|
-|Release|xpto_nomn_01_release_01|Definido no Jira|01/11/2012|Código fonte, release notes, relatório de testes|
+| Tipo da Baseline | Label da Baseline | Data/Marco de criação | Descrição
+|------------------------|-----------------------------|----------------------|----------------------|
+|Requisitos|xpto_nomn_01_requisitos_01|01/10/2014| User stories
+|Teste|xpto_nomn_01_testes_01|20/10/2014| Plano de teste, casos de teste e relatório de testes
+|Release|xpto_nomn_01_release_01|01/11/2014|Código fonte e release notes|
 
 ### 3.1.4 Estrutura do Repositório de Versões
 
@@ -206,8 +205,8 @@ _Exemplo:_ **SIGLA DO CLIENTE\>SIGLA DO PROJETO\>DIRETÓRIO\>SUBDIRETÓRIO\(ARTE
 |-----------|--------------|-----------|
 | Documentos | Gerência de Configuração | Modelo do Plano de Gerenciamento de configuração <br> Relatório de Acompanhamento de Projeto <br> Notas de Releases e Arquivos de aprovação dos documentos. |
 | Documentos | Gerência de Projetos | Documento de Visão <br> Termo de Abertura <br> Plano de Projeto <br> Cronograma <br> Relatório de Status <br> Atas de Reuniões <br> Arquivos de aprovação dos documentos. |
-| Documentos | Requisitos | Especificação de Caso de Uso <br> Modelo de Caso de Uso <br> Glossário e Arquivos de aprovação dos documentos. |
-| Documentos | Analise e Projeto | Manual de Implantação <br> Documento de Arquitetura <br> Modelo de Banco de Dados <br> Modelo de Análise e Projetos <br> Arquivos de aprovação dos documentos. |
+| Documentos | Requisitos | Backlog <br> User Stories <br> Glossário e Arquivos de aprovação dos documentos. |
+| Documentos | Análise e Projeto | Manual de Implantação <br> Documento de Arquitetura <br> Modelo de Banco de Dados <br> Modelo de Análise e Projetos <br> Arquivos de aprovação dos documentos. |
 | Documentos | Gerência de Mudança | Planilha de Acompanhamento de Mudanças <br> Formulário de Solicitação de Mudança <br> Relatório de Controle de Mudança <br> Arquivos de aprovação dos documentos |
 | Aplicação | ... | Códigos Fonte |
 
@@ -247,10 +246,10 @@ Os possíveis estados para uma mudança estão especificados na tabela abaixo:
 ### 3.2.2 Comitê de Controle de Mudança (CCB)
 O CCB é responsável pela aprovação das solicitações de mudança para que sejam incorporadas ao produto através da alteração de uma baseline. Segundo a hierarquia institucional do CCB, o CCB Item será formado pelos responsáveis de cada item de configuração afetado pela solicitação de mudança. O CCB tem como participantes:
 
-| Participantes |
-|-----------|
-| Coordenador |  
-| Líder de Configuração |  
+Papel | Participantes |
+|-----------|-----------|
+| Coordenador | Emanuela Mascarenhas  
+| Líder de Configuração | Manoela Freitas
 
 
 4. Padrões e Procedimentos
@@ -321,7 +320,7 @@ Ex: EntregaRequisitos_1.0
 
 6. Auditorias de Configuração
 =============================
-As auditorias de configuração serão realizadas mensalmente, segundo o calendário abaixo. As não conformidades serão documentadas no relatório de auditoria que está localizado no diretório informado no item 3.1.2. O acompanhamento das correções será feito através de issues cadastradas no jira do projeto.
+As auditorias de configuração serão realizadas mensalmente, segundo o calendário abaixo. As não conformidades serão documentadas no relatório de auditoria que está localizado no diretório informado no item 3.1.2. O acompanhamento das correções será feito através de issues cadastradas no Jira do projeto.
 
 | Número | Data Prevista | Data Realizada |     Auditor     |
 |--------|---------------|----------------|-----------------|
