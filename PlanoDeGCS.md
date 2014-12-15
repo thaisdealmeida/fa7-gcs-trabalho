@@ -79,7 +79,7 @@ A seção 6 descreve o cronograma das auditorias de configuração e o que será
 2.2 Ferramentas, Ambiente e Infra-estrutura
 -------------------------------------------
 _[Descreva o ambiente de computação e as ferramentas de software a serem utilizadas para desempenhar as funções de CM em todo o ciclo de vida do projeto ou produto._
-_Descreva as ferramentas e os procedimentos necessários utilizados para o controle de versão dos itens de configuração gerados no ciclo de vida do projeto ou produto._
+_Descreva as ferramentas e os procedimentos necessários utilizados para o controle de versão dos itens de configuração gerados no ciclo de vida do projeto o produto._
 _As questões envolvidas na configuração do ambiente de CM incluem:_
 * _tamanho previsto dos dados do produto_
 * _distribuição da equipe do produto_
