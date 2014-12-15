@@ -65,7 +65,7 @@ A seção 6 descreve o cronograma das auditorias de configuração e o que será
 | Papéis	                      | Equipe		  	      | Responsabilidade     |
 |----------------------------------------|-----------------------------|---------------------------|
 |Gerente de Configuração|Thaís de Almeida|Estabelecer Políticas de GC <br> Escrever Plano de GC <br> Configurar Ambiente de GC <br> Criar Espaços de Trabalho de Integração <br> Criar Baselines <br> Promover Baselines|
-|CCM|Manoela Freitas, <br> Emanuela Mascarenhas|Estabelecer Processo de Controle de Mudanças <br> Revisar Solicitação de Mudança <br> Aprovar ou rejeitar solicitações de mudanças|
+|CCB|Manoela Freitas, <br> Emanuela Mascarenhas|Estabelecer Processo de Controle de Mudanças <br> Revisar Solicitação de Mudança <br> Aprovar ou rejeitar solicitações de mudanças|
 |Desenvolvedor|Fernando Italo, <br> Andre Rocha|Seguir os padrões e procedimentos definidos no plano de gerência de configuração|
 
 2.2 Ferramentas, Ambiente e Infra-estrutura
@@ -117,7 +117,7 @@ A ferramenta de controle de versão utilizada no projeto será o GIT, uma ferram
 
 | Repositório Remoto	                      |         		  	      |
 |----------------------------------------|-----------------------------|
-|Endereço|https://github.com/biblioteca/projetobiblioteca|
+|Endereço|https://github.com/thaisdealmeida/fa7-gcs-trabalho|
 
 ### Controle de Mudanças
 Para controle de mudanças, será utilizado no projeto a ferramenta Jira. Todos os membros da equipe do projeto deverão ter um usuário para acesso, assim como os clientes que irão solicitar as mudanças.
@@ -165,13 +165,13 @@ A edição de código-fonte será feita através do PHPStorm. A documentação d
 
 Os itens de configuração devem possuir um identificador único. A identificação para os itens de processo segue o formato abaixo:
 
-(NOME_DO_PROJETO)_(NOME_ DO_ARTEFATO)_(VERSÃO).EXTENSÃO
+(NOME_DO_PROJETO)_ (NOME_ DO_ARTEFATO)_(VERSÃO).EXTENSÃO
 
 Ex: Biblioteca_Cronograma_v1.mpp
 	       	
 Para os itens de código cada classe deve seguir a identificação abaixo:
 
-(NOME_ DA_CLASSE).EXTENSÃO
+(NOME_DA_CLASSE).EXTENSÃO
 
 Ex: Login.php
 
@@ -184,9 +184,9 @@ Os itens de configuração do processo de desenvolvimento de software são os ar
 |Documento de Teste|Analista de teste|Execução de testes funcionais|
 |Manual do usuário|Desenvolvedor: Andre Rocha|Desenvolvimento de nova funcionalidade|
 |Código fonte|Desenvolvedor: Fernando Freitas|  -  |
-|Plano de Projeto de Software|Gerente do Projeto: Emanuela Mascarenhas|Alteração em itens do Plano|
+|Plano de Projeto de Software|Gerente de Projeto: Emanuela Mascarenhas|Alteração em itens do Plano|
 |Planilha de acompanhamento de mudanças|CCB: Manoela Freitas|Adição de nova mudança <br> Alteração de status da mudança|
-|Cronograma|Gerente do Projeto: Emanuela Mascarenhas|Modificação de prazos <br> Alteração/remoção/adição de atividades|
+|Cronograma|Gerente de Projeto: Emanuela Mascarenhas|Modificação de prazos <br> Alteração/remoção/adição de atividades|
 
 ### 3.1.3 Baselines do Projeto
 
