@@ -86,7 +86,7 @@ A seção 6 descreve o cronograma das auditorias de configuração e o que será
 
 ### 2.2.2 Ambiente e Infra-estrutura
 ### Banco de Dados
-O banco de dados utilizado no projeto é PostgresSQL. Serão definidos três bancos de dados: Desenvolvimento, Homologação e Produção. Banco de Desenvolvimento é o banco utilizado pelos desenvovledores nas atividades de desenvolvimento ou testes. Banco de Homologação é o banco utilizado pelas versões do sistema a serem homologadas pelo cliente. Banco de Produção é o banco utilizado pelas versões definitivas disponibilizadas ao cliente. Os bancos de dados estarão configurados da seguinte maneira:
+O banco de dados utilizado no projeto é MySQL. Serão definidos três bancos de dados: Desenvolvimento, Homologação e Produção. Banco de Desenvolvimento é o banco utilizado pelos desenvovledores nas atividades de desenvolvimento ou testes. Banco de Homologação é o banco utilizado pelas versões do sistema a serem homologadas pelo cliente. Banco de Produção é o banco utilizado pelas versões definitivas disponibilizadas ao cliente. Os bancos de dados estarão configurados da seguinte maneira:
 
 | Banco de Desenvolvimento	                             |      		  	         | 
 |-------------------------------------------------------|--------------------|
@@ -108,7 +108,7 @@ O banco de dados utilizado no projeto é PostgresSQL. Serão definidos três ban
 |-----------------------------------------|-------------------|
 |IP|192.168.1.7|
 |Porta|5432|
-|Nome do banco|Bibliotecabd|
+|Nome do banco|bibliotecabd|
 |Sistema Operacional|Ubuntu|
 |Hardware|Intel® Core™ i7-4980HQ Processor (6M Cache, up to 4.00 GHz)	6.0 MB	2.80 GHz, 8GB RAM, 1TB HD|
 
@@ -131,16 +131,16 @@ Para controle de mudanças, será utilizado no projeto a ferramenta Jira. Todos 
 |Hardware|Processador Intel® Core i5 2.8 GHz, 4GB RAM, 500 HD|
 
 ### Servidores de Aplicação
-O servidor de aplicação utilizado pelo projeto será o JBoss. Serão disponiblizados dois servidores de aplicação, Homologação, no qual serão implantadas as versões a serem homologadas pelo cliente, e Produção, onde serão implantadas as versões finais a serem disponibilizadas ao cliente. Os desenvolvedores também terão um servidor JBoss rodando localmente em suas estações de desenvolvimento.
+O servidor de aplicação utilizado pelo projeto será o Apache. Serão disponiblizados dois servidores de aplicação, Homologação, no qual serão implantadas as versões a serem homologadas pelo cliente, e Produção, onde serão implantadas as versões finais a serem disponibilizadas ao cliente. Os desenvolvedores também terão um servidor Apache rodando localmente em suas estações de desenvolvimento.
 
-| Servidor JBoss de Homologação	                      |         		  	      |
+| Servidor Apache de Homologação	                      |         		  	      |
 |----------------------------------------|-----------------------------|
 |IP|192.168.1.9|
 |Porta|8080|
 |Sistema Operacional|Linux Debian|
 |Hardware|Processador Intel® Core i5 2.8 GHz, 4GB RAM, 500 HD|
 
-| Servidor JBoss de Produção	                      |         		  	      |
+| Servidor Apache de Produção	                      |         		  	      |
 |----------------------------------------|-----------------------------|
 |IP|192.168.1.10|
 |Porta|8080|
@@ -148,13 +148,13 @@ O servidor de aplicação utilizado pelo projeto será o JBoss. Serão disponibl
 |Hardware|Processador Intel® Xeon® Quad-Core 3.10GHz, 8GB RAM, 500 HD|
 
 ### Configuração da Área de Trabalho
-A edição de código-fonte será feita através da IDE Eclipse. A documentação do projeto deverá ser feita utilizando a ferramenta LibreOffice salvando no formato ODF (Open Document Format). As estações de trabalho de desenvolvimento deverão ter as seguintes configurações:
+A edição de código-fonte será feita através do PHPStorm. A documentação do projeto deverá ser feita utilizando a ferramenta LibreOffice salvando no formato ODF (Open Document Format). As estações de trabalho de desenvolvimento deverão ter as seguintes configurações:
 
 | Área de Trabalho	                      |         		  	      |
 |----------------------------------------|-----------------------------|
 |Sistema Operacional|Linux Ubuntu|
 |Hardware|Processador Intel® Core i7 3.4GHz, 8GB RAM, 500 HD|
-|Softwares|Git, Eclipse + EGit, pgAdmin, Java JDK, JBoss, Libre Office|
+|Softwares|Git, PHPStorm, MySQL WorkBench, Apache, Xampp, Libre Office|
 
 3. O Programa de Gerenciamento de Configuração
 ==============================================
