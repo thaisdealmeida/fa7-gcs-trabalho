@@ -18,6 +18,7 @@ Histórico de Versões
 |14/12/2014 | 1.1 | Inclusão de Seção 4. | Thaís de Almeida |
 |14/12/2014 | 1.2 | Inclusão de Seção 1.3, 3.1.3 e 6 | André rocha |
 |14/12/2014 | 1.3 | Inclusão de Seção 1.1, 3.2.2 e 5 | Manoela Freitas |
+|15/12/2014 | 1.4 | Inclusão de Seção 1.2, 1.5, 2.1 e 3.1.4 | Fernando Freitas |
 |_&lt;dd/mm/aaaa&gt;_|_&lt;1.1&gt;_|_&lt;Outra versão&gt;_  |_&lt;autor&gt;_|
 
 
@@ -35,7 +36,7 @@ Este documento tem o objetivo de descrever o plano de Gestão de Configuração 
 
 1.2 Escopo
 ----------
-_[Uma breve descrição do escopo deste Plano de Gerenciamento de Configuração; o modelo ao qual ele está associado e tudo o que é afetado ou influenciado por este documento.]_
+Este documento é destinado a todos os integrantes da equipe responsável pelo projeto Biblioteca e abrange todo o controle e gerenciamento da configuração do projeto, tais como requisitos, casos de uso, diagramas, arquivos de código-fonte, modelos de dados, casos de teste e manuais.
 
 1.3 Definições, Acrônimos e Abreviações
 ---------------------------------------
@@ -50,8 +51,17 @@ Não se aplica.
 
 1.5 Visão Geral
 ---------------
-_[Esta subseção descreve o conteúdo restante do Plano de Gerenciamento de Configuração e explica como o documento está organizado.]_
+As próximas seções deste documento estão divididas conforme descrito abaixo:
 
+A seção 2 descreve os papéis e suas responsabilidades das atividades,  ferramentas utilizadas e os procedimentos necessários para realização do controle de versão dos itens de configuração gerados no ciclo de vida do projeto.
+
+A seção 3 descreve como os itens de configuração devem ser identificados, as Baselines do projeto,a estrutura do repositório e a organização dos itens dentro do repositório.
+
+A seção 4 são abordados os padrões e procedimentos que devem ser seguidos no projeto.
+
+A seção 5 descreve as ferramentas de software, o pessoal e o treinamento necessários para implementar as atividades de CM especificadas.
+
+A seção 6 descreve o cronograma das auditorias de configuração e o que será verificado. Também informa como serão reportados os problemas encontrados e como será feito o acompanhamento das correções.
 
 
 2. Gerenciamento de Configuração de Software
@@ -59,7 +69,12 @@ _[Esta subseção descreve o conteúdo restante do Plano de Gerenciamento de Con
 
 2.1 Organização, Responsabilidades e Interfaces
 ------------------------------------------------
-_[Descreva quem será o responsável pela execução das diversas atividades de Gerenciamento de Configuração (CM) descritas no Processo de CM.]_
+
+| Papéis	                      | Equipe		  	      | Responsabilidade     |
+|----------------------------------------|-----------------------------|---------------------------|
+|Gerente de Configuração|Thaís de Almeida|Estabelecer Políticas de GC <br> Escrever Plano de GC <br> Configurar Ambiente de GC <br> Criar Espaços de Trabalho de Integração <br> Criar Baselines <br> Promover Baselines|
+|CCM|Manoela Freitas|Estabelecer Processo de Controle de Mudanças <br> Revisar Solicitação de Mudança <br> Aprovar ou rejeitar solicitações de mudanças|
+|Desenvolvedor|Fernando Italo, <br> Andre Rocha|Seguir os padrões e procedimentos definidos no plano de gerência de configuração|
 
 2.2 Ferramentas, Ambiente e Infra-estrutura
 -------------------------------------------
@@ -101,7 +116,23 @@ _[Relacionar os artefatos ou grupos de artefatos, separando por tipo, modulo ou 
 |Release|xpto_nomn_01_release_01|Definido no Jira|01/11/2012|Código fonte, release notes, relatório de testes|
 
 ### 3.1.4 Estrutura do Repositório de Versões
-_[Descreva a organização de diretórios do seu repositório e que itens/arquivos devem ser armazenados em cada diretório.]_
+
+Os projetos deverão seguir a seguinte estrutura de pastas no repositório:
+
+_Exemplo:_ **SIGLA DO CLIENTE\>SIGLA DO PROJETO\>DIRETÓRIO\>SUBDIRETÓRIO\(ARTEFATOS\)**
+
+| Diretório | Subdiretório | Artefatos |
+|-----------|--------------|-----------|
+| Documentos | Gerência de Configuração | Modelo do Plano de Gerenciamento de configuração <br> Relatório de Acompanhamento de Projeto <br> Notas de Releases e Arquivos de aprovação dos documentos. |
+| Documentos | Gerência de Projetos | Documento de Visão <br> Termo de Abertura <br> Plano de Projeto <br> Cronograma <br> Relatório de Status <br> Atas de Reuniões <br> Arquivos de aprovação dos documentos. |
+| Documentos | Requisitos | Especificação de Caso de Uso <br> Modelo de Caso de Uso <br> Glossário e Arquivos de aprovação dos documentos. |
+| Documentos | Analise e Projeto | Manual de Implantação <br> Documento de Arquitetura <br> Modelo de Banco de Dados <br> Modelo de Análise e Projetos <br> Arquivos de aprovação dos documentos. |
+| Documentos | Gerência de Mudança | Planilha de Acompanhamento de Mudanças <br> Formulário de Solicitação de Mudança <br> Relatório de Controle de Mudança <br> Arquivos de aprovação dos documentos |
+| Aplicação | ... | Códigos Fonte |
+
+Caso exista algum projeto onde a estrutura de pastas não atenda, será gerada uma adaptação e esta deverá ser descrita no _Plano de Projeto_.
+
+A responsabilidade de operacionalizar esses procedimentos ficará a cargo do _Analista de Gestão de Configuração_.
 
 3.2 Controle de Configuração e Mudança
 --------------------------------------
