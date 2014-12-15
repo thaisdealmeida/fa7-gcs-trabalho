@@ -17,7 +17,7 @@ Histórico de Versões
 |13/12/2014 | 1.0 | Versão inicial. | Thaís de Almeida |
 |14/12/2014 | 1.1 | Inclusão de Seção 4. | Thaís de Almeida |
 |14/12/2014 | 1.2 | Inclusão de Seção 1.3, 3.1.3 e 6 | André rocha |
-|14/12/2014 | 1.3 | Inclusão de Seção 1.1, 3.2.2 e 5 | André rocha |
+|14/12/2014 | 1.3 | Inclusão de Seção 1.1, 3.2.2 e 5 | Manoela Freitas |
 |_&lt;dd/mm/aaaa&gt;_|_&lt;1.1&gt;_|_&lt;Outra versão&gt;_  |_&lt;autor&gt;_|
 
 
