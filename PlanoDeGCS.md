@@ -17,6 +17,7 @@ Histórico de Versões
 |13/12/2014 | 1.0 | Versão inicial. | Thaís de Almeida |
 |14/12/2014 | 1.1 | Inclusão de Seção 4. | Thaís de Almeida |
 |14/12/2014 | 1.2 | Inclusão de Seção 1.3, 3.1.3 e 6 | André rocha |
+|14/12/2014 | 1.3 | Inclusão de Seção 1.1, 3.2.2 e 5 | André rocha |
 |_&lt;dd/mm/aaaa&gt;_|_&lt;1.1&gt;_|_&lt;Outra versão&gt;_  |_&lt;autor&gt;_|
 
 
@@ -30,7 +31,7 @@ Plano de Gerenciamento de Configuração.]_
 
 1.1 Finalidade
 ---------------
-_[Especifique a finalidade deste Plano de Gerenciamento de Configuração.]_
+Este documento tem o objetivo de descrever o plano de Gestão de Configuração e Mudança para o estabelecimento da configuração do projeto Biblioteca.
 
 1.2 Escopo
 ----------
@@ -132,8 +133,12 @@ Os possíveis estados para uma mudança estão especificados na tabela abaixo:
 
 
 ### 3.2.2 Comitê de Controle de Mudança (CCB)
-_[Descreva a participação e os procedimentos para processar solicitações e aprovações de mudança a serem seguidos pelo CCB. Informe quem são os membros do CCB e suas responsabilidades.]_
+O CCB é responsável pela aprovação das solicitações de mudança para que sejam incorporadas ao produto através da alteração de uma baseline. Segundo a hierarquia institucional do CCB, o CCB Item será formado pelos responsáveis de cada item de configuração afetado pela solicitação de mudança. O CCB tem como participantes:
 
+| Participantes |
+|-----------|
+| Coordenador |  
+| Líder de Configuração |  
 
 
 4. Padrões e Procedimentos
@@ -196,7 +201,9 @@ Ex: EntregaRequisitos_1.0
 
 5. Treinamento e Recursos
 =========================
-_[Descreva as ferramentas de software, o pessoal e o treinamento necessários para implementar as atividades de CM especificadas.]_
+| Treinamento | Objetivo | Público Alvo |
+|-----------|-----------|-----------|
+| Repositório |  Ensina como acessar o repositório através de uma máquina cliente, como dar os comandos principais do repositório, como incluir novos itens dentro do repositório e também como remover do mesmo. | Toda a equipe. |
 
 
 
