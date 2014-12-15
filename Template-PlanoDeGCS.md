@@ -14,7 +14,7 @@ Histórico de Versões
 
 |Data                |Versão       |Descrição               |Autor          |
 |--------------------|-------------|------------------------|---------------|
-|_&lt;dd/mm/aaaa&gt;_|_&lt;1.0&gt;_|_&lt;Versão inicial&gt;_|_&lt;autor&gt;_|
+|14/12/2014|A.01|Alterado o item 3.1.3 - adicionado a programação das baselines. Alterado o item 6 - adicionado o procedimento de auditoria de configuração|André Rocha|
 |_&lt;dd/mm/aaaa&gt;_|_&lt;1.1&gt;_|_&lt;Outra versão&gt;_  |_&lt;autor&gt;_|
 
 
