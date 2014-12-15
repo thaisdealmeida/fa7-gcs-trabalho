@@ -1,13 +1,9 @@
-<Nome do Projeto>
+Projeto Biblioteca
 =================
 Plano de Gerenciamento de Configuração
 ======================================
-Versão 1.1
+Versão 1.5
 ------------------
-
-_[Observação: O template a seguir é fornecido para uso com o Rational Unified Process (RUP).  O texto exibido entre colchetes e em itálico foi incluído para orientar o autor e deve ser excluído antes da publicação do documento._
-
-_Este documento utiliza a formatação da linguagem [Markdown] (http://daringfireball.net/projects/markdown/). Você pode encontrar um guia de referência rápido [aqui] (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).]_
 
 Histórico de Versões
 --------------------
@@ -16,19 +12,15 @@ Histórico de Versões
 |--------------------|-------------|------------------------|---------------|
 |13/12/2014 | 1.0 | Versão inicial. | Thaís de Almeida |
 |14/12/2014 | 1.1 | Inclusão de Seção 4. | Thaís de Almeida |
-|14/12/2014 | 1.2 | Inclusão de Seção 1.3, 3.1.3 e 6 | André rocha |
+|14/12/2014 | 1.2 | Inclusão de Seção 1.3, 3.1.3 e 6 | André Rocha |
 |14/12/2014 | 1.3 | Inclusão de Seção 1.1, 3.2.2 e 5 | Manoela Freitas |
 |15/12/2014 | 1.4 | Inclusão de Seção 1.2, 1.5, 2.1 e 3.1.4 | Fernando Freitas |
-|_&lt;dd/mm/aaaa&gt;_|_&lt;1.1&gt;_|_&lt;Outra versão&gt;_  |_&lt;autor&gt;_|
+|15/12/2014 | 1.5 | Inclusão de Seção 2.2.1, 2.2.2, 3.1.1 e 3.1.2 | Emanuela Mascarenhas |
 
 
 
 1. Introdução
 ==============
-
-_[A introdução do Plano de Gerenciamento de Configuração  oferece uma visão geral de todo o documento. 
-Ela inclui a finalidade, o escopo, as definições, os acrônimos, as abreviações, as referências e uma visão geral deste
-Plano de Gerenciamento de Configuração.]_
 
 1.1 Finalidade
 ---------------
@@ -40,8 +32,8 @@ Este documento é destinado a todos os integrantes da equipe responsável pelo p
 
 1.3 Definições, Acrônimos e Abreviações
 ---------------------------------------
- NOMN - Nome do projeto, acronimo utilizado no inicio do nome de todos os artefatos.
- Jira - Ferramenta da Atlassian para controle de mudanças.
+ NOMN - Nome do projeto, acronimo utilizado no inicio do nome de todos os artefatos.<br>
+ Jira - Ferramenta da Atlassian para controle de mudanças.<br>
  SVN  - Subversion - Ferramenta open source de controle de configuração de software.
 
 1.4 Referências
@@ -73,19 +65,96 @@ A seção 6 descreve o cronograma das auditorias de configuração e o que será
 | Papéis	                      | Equipe		  	      | Responsabilidade     |
 |----------------------------------------|-----------------------------|---------------------------|
 |Gerente de Configuração|Thaís de Almeida|Estabelecer Políticas de GC <br> Escrever Plano de GC <br> Configurar Ambiente de GC <br> Criar Espaços de Trabalho de Integração <br> Criar Baselines <br> Promover Baselines|
-|CCM|Manoela Freitas|Estabelecer Processo de Controle de Mudanças <br> Revisar Solicitação de Mudança <br> Aprovar ou rejeitar solicitações de mudanças|
+|CCM|Manoela Freitas, <br> Emanuela Mascarenhas|Estabelecer Processo de Controle de Mudanças <br> Revisar Solicitação de Mudança <br> Aprovar ou rejeitar solicitações de mudanças|
 |Desenvolvedor|Fernando Italo, <br> Andre Rocha|Seguir os padrões e procedimentos definidos no plano de gerência de configuração|
 
 2.2 Ferramentas, Ambiente e Infra-estrutura
 -------------------------------------------
-_[Descreva o ambiente de computação e as ferramentas de software a serem utilizadas para desempenhar as funções de CM em todo o ciclo de vida do projeto ou produto._
-_Descreva as ferramentas e os procedimentos necessários utilizados para o controle de versão dos itens de configuração gerados no ciclo de vida do projeto ou produto._
-_As questões envolvidas na configuração do ambiente de CM incluem:_
-* _tamanho previsto dos dados do produto_
-* _distribuição da equipe do produto_
-* _localização física dos servidores e clientes]_
- 
+### 2.2.1 Ferramentas
+| Nome	                      | Descrição		  	      | Versão     | Licença     |
+|----------------------------------------|-----------------------------|---------------------------|---------------------------|
+|Git|Controle de versão distribuído|2.2.0|Free|
+|GitHub|Serviço de hospedagem de repositório Git (privado)|...|$ 7,00 / mês|
+|Jira|Ferramenta de controle de mudanças|6.1.4|$ 10,00 / mês|
+|MySQL|Servidor de Banco de Dados|5.6|Free|
+|MySQL Workbench|Client MySQL|6.2|Free|
+|PHPStorm|IDE para desenvolvimento PHP|8|$ 199,00 /ano|
+|Ubuntu|Sistema Operacional|14.0|Free|
+|Xampp|Ambiente de Desenvolvimento PHP|5.6.3|Free|
+|PHP|Linguagem de programação web|5.5|Free|
+|Apache|Servidor de aplicações web|2.4.7|Free|
 
+### 2.2.2 Ambiente e Infra-estrutura
+### Banco de Dados
+O banco de dados utilizado no projeto é PostgresSQL. Serão definidos três bancos de dados: Desenvolvimento, Homologação e Produção. Banco de Desenvolvimento é o banco utilizado pelos desenvovledores nas atividades de desenvolvimento ou testes. Banco de Homologação é o banco utilizado pelas versões do sistema a serem homologadas pelo cliente. Banco de Produção é o banco utilizado pelas versões definitivas disponibilizadas ao cliente. Os bancos de dados estarão configurados da seguinte maneira:
+
+| Banco de Desenvolvimento	                             |      		  	         | 
+|-------------------------------------------------------|--------------------|
+|IP|192.168.1.1|
+|Porta|3306|
+|Nome do banco|bibliotecabd_dev|
+|Sistema Operacional|Ubuntu|
+|Hardware|Intel® Core™ i5-4210H Processor (3M Cache, up to 3.50 GHz)	3.0 MB	2.90 GHz, 4GB RAM, 500 HD|
+
+| Banco de Homologação	                      | 		  	              | 
+|--------------------------------------------|--------------------|
+|IP|192.168.1.2|
+|Porta|3306|
+|Nome do banco|bibliotecabd_homolog|
+|Sistema Operacional|Ubuntu|
+|Hardware|Intel® Core™ i5-4210H Processor (3M Cache, up to 3.50 GHz)	3.0 MB	2.90 GHz, 4GB RAM, 500 HD|
+
+| Banco de Produção	                      | 		  	             | 
+|-----------------------------------------|-------------------|
+|IP|192.168.1.7|
+|Porta|5432|
+|Nome do banco|Bibliotecabd|
+|Sistema Operacional|Ubuntu|
+|Hardware|Intel® Core™ i7-4980HQ Processor (6M Cache, up to 4.00 GHz)	6.0 MB	2.80 GHz, 8GB RAM, 1TB HD|
+
+### Controle de Versão
+A ferramenta de controle de versão utilizada no projeto será o GIT, uma ferramenta de controle de versão distribuído. Também será usado o serviço GitHub para hospedar o repositório remoto do projeto. Este repositório deverá ser privado. O custo com o serviço de hospedagem do repositório é de $7.00 por mês. Os desenvolvedores da equipe deverão criar um repositório local que deverá ser um "clone" do repositório remoto em sua estação de desenvolvimento.
+
+| Repositório Remoto	                      |         		  	      |
+|----------------------------------------|-----------------------------|
+|Endereço|https://github.com/biblioteca/projetobiblioteca|
+
+### Controle de Mudanças
+Para controle de mudanças, será utilizado no projeto a ferramenta Jira. Todos os membros da equipe do projeto deverão ter um usuário para acesso, assim como os clientes que irão solicitar as mudanças.
+
+| Servidor Jira	                      |         		  	      |
+|----------------------------------------|-----------------------------|
+|IP|192.168.1.8|
+|Porta|8080|
+|Endereço|http://102.168.1.8:8080/secure/Dashboard.jspa|
+|Sistema Operacional|Linux Debian|
+|Hardware|Processador Intel® Core i5 2.8 GHz, 4GB RAM, 500 HD|
+
+### Servidores de Aplicação
+O servidor de aplicação utilizado pelo projeto será o JBoss. Serão disponiblizados dois servidores de aplicação, Homologação, no qual serão implantadas as versões a serem homologadas pelo cliente, e Produção, onde serão implantadas as versões finais a serem disponibilizadas ao cliente. Os desenvolvedores também terão um servidor JBoss rodando localmente em suas estações de desenvolvimento.
+
+| Servidor JBoss de Homologação	                      |         		  	      |
+|----------------------------------------|-----------------------------|
+|IP|192.168.1.9|
+|Porta|8080|
+|Sistema Operacional|Linux Debian|
+|Hardware|Processador Intel® Core i5 2.8 GHz, 4GB RAM, 500 HD|
+
+| Servidor JBoss de Produção	                      |         		  	      |
+|----------------------------------------|-----------------------------|
+|IP|192.168.1.10|
+|Porta|8080|
+|Sistema Operacional|Linux Debian|
+|Hardware|Processador Intel® Xeon® Quad-Core 3.10GHz, 8GB RAM, 500 HD|
+
+### Configuração da Área de Trabalho
+A edição de código-fonte será feita através da IDE Eclipse. A documentação do projeto deverá ser feita utilizando a ferramenta LibreOffice salvando no formato ODF (Open Document Format). As estações de trabalho de desenvolvimento deverão ter as seguintes configurações:
+
+| Área de Trabalho	                      |         		  	      |
+|----------------------------------------|-----------------------------|
+|Sistema Operacional|Linux Ubuntu|
+|Hardware|Processador Intel® Core i7 3.4GHz, 8GB RAM, 500 HD|
+|Softwares|Git, Eclipse + EGit, pgAdmin, Java JDK, JBoss, Libre Office|
 
 3. O Programa de Gerenciamento de Configuração
 ==============================================
@@ -93,19 +162,31 @@ _As questões envolvidas na configuração do ambiente de CM incluem:_
 3.1 Identificação da Configuração
 ---------------------------------
 ### 3.1.1 Métodos de Identificação
-----------------------------------
-_[Descreva como os artefatos do projeto ou produto devem ser nomeados, marcados e numerados. O esquema de identificação deve abranger o hardware, o software do sistema, os produtos de terceiros (COTS) e todos os artefatos de desenvolvimento de aplicativos listados na estrutura de diretórios do produto; por exemplo, planos, modelos, componentes, software de teste, resultados e dados, executáveis e assim por diante.]_
+
+Os itens de configuração devem possuir um identificador único. A identificação para os itens de processo segue o formato abaixo:
+
+(NOME_DO_PROJETO)_(NOME_ DO_ARTEFATO)_(VERSÃO).EXTENSÃO
+
+Ex: Biblioteca_Cronograma_v1.mpp
+	       	
+Para os itens de código cada classe deve seguir a identificação abaixo:
+
+(NOME_ DA_CLASSE).EXTENSÃO
+
+Ex: Login.php
 
 ### 3.1.2 Itens de Configuração
-_[Relacionar os artefatos ou grupos de artefatos, separando por tipo, modulo ou subsistema, responsável ou momento em que deverão ser incluídos em baselines._
-* _“Inclusão em Baseline” em branco significa que o grupo de artefatos não participará de baseline. Pode ser expresso como uma data ou identificador de uma baseline, fase ou ponto de controle_
-* _“Responsável”: indicar nominalmente, sempre que possível]_
+Os itens de configuração do processo de desenvolvimento de software são os artefatos que estão sob a gerência de configuração. Alguns documentos produzidos pelo projeto Biblioteca não serão tratados como itens de configuração, embora mantenhamos estes documentos no repositório. Trataremos como itens de configuração do processo de software os seguintes itens:
 
 | Item (ou Tipo de Item)                 | Responsável na equipe	     | Inclusão em Baseline |
 |----------------------------------------|-----------------------------|----------------------|
-|_&lt;grupo de itens de configuração&gt;_|_&lt;nome do responsável&gt;_|_&lt;momento a partir do qual o conjunto de artefatos será incluído em baseline&gt;_|
-
-
+|Documento de Requisitos|Analista de requisitos|Modificação ou remoção de requisito existente <br> Criação de novo requisito|
+|Documento de Teste|Analista de teste|Execução de testes funcionais|
+|Manual do usuário|Desenvolvedor: Andre Rocha|Desenvolvimento de nova funcionalidade|
+|Código fonte|Desenvolvedor: Fernando Freitas|  -  |
+|Plano de Projeto de Software|Gerente do Projeto: Emanuela Mascarenhas|Alteração em itens do Plano|
+|Planilha de acompanhamento de mudanças|CCB: Manoela Freitas|Adição de nova mudança <br> Alteração de status da mudança|
+|Cronograma|Gerente do Projeto: Emanuela Mascarenhas|Modificação de prazos <br> Alteração/remoção/adição de atividades|
 
 ### 3.1.3 Baselines do Projeto
 
